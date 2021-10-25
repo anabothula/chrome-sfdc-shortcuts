@@ -1,0 +1,15 @@
+{
+  "name": "chrome-sfdc-shortcuts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "contentScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@salesforce-ux/design-system": "^2.16.2",
+    "prettier": "^2.4.1"
+  }
+}
