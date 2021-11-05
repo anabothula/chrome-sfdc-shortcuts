@@ -1,0 +1,10 @@
+body {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+}
+
+.slds-tabs_scoped__content{
+    padding: 0rem;
+    padding-top: 0.5rem;
+}

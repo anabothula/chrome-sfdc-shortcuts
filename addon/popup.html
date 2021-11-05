@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./slds.min.css" />
+    <link rel="stylesheet" href="./popup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="slds-p-around_small" style="overflow-y: auto; height: 100%">
+      <div class="slds-tabs_scoped">
+        <ul class="slds-tabs_scoped__nav slds-grid slds-text-align_center" role="tablist" id="tabs">
+          <li class="slds-tabs_scoped__item slds-is-active slds-size_1-of-2" title="Shortcuts" role="presentation">
+            <a
+              class="slds-tabs_scoped__link"
+              href="#"
+              role="tab"
+              tabindex="0"
+              aria-selected="true"
+              aria-controls="tab-default-1"
+              id="tab-default-1__item"
+              >Shortcuts</a
+            >
+          </li>
+          <li class="slds-tabs_scoped__item slds-size_1-of-2" title="Org Groups" role="presentation">
+            <a
+              class="slds-tabs_scoped__link"
+              href="#"
+              role="tab"
+              tabindex="-1"
+              aria-selected="false"
+              aria-controls="tab-default-2"
+              id="tab-default-2__item"
+              >Org Groups</a
+            >
+          </li>
+        </ul>
+        <div id="tab-default-1" class="slds-tabs_scoped__content slds-show" role="tabpanel" aria-labelledby="tab-default-1__item">
+          <div id="shortcuts"></div>
+          <div class="add-btn slds-grid slds-align_absolute-center slds-p-around_small">
+            <button id="addLink" class="slds-button slds-button_brand">Add Shortcut</button>
+          </div>
+        </div>
+        <div id="tab-default-2" class="slds-tabs_scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">
+          <div class="slds-p-around_small slds-grid">
+            <h6>Available Group Colors :</h6>
+            <p>grey, blue, red, yellow, green, pink, purple, or cyan</p>
+          </div>
+
+          <div id="orgGroups"></div>
+          <div class="add-btn slds-grid slds-align_absolute-center slds-p-around_small">
+            <button id="addOrgGroup" class="slds-button slds-button_brand">Add a group</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./popup.js"></script>
+  <script type="module" src="./tabGroup.js"></script>
+</html>
